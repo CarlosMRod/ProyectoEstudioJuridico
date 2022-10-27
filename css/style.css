@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #b2ba86;
+    padding-top: 60px;
+}
+
+/*Barra de navegacion*/
+header{
+    width: 100%;
+    background-color: #b2ba86;
+    height: 60px;
+
+    /*Sticky*/
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.lateral{
+	width: 80%;
+	height: 60px;
+	background-color:  #b2ba86;
+	margin: auto;
+}
+
+.logo{
+	width: 30%;
+	height: 60px;
+	background: #b2ba86;
+	float: left;
+	box-sizing: border-box;
+    padding-top: 5px;
+}
+
+#navbar{
+	width: 70%;
+	height: 60px;
+	background: #b2ba86;
+	float: left;
+	text-align: right;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+#navbar ul {    
+    list-style:none;
+    font-size: 0;
+    padding: 0;
+}
+
+#navbar  li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+  }
+
+@media screen and (max-width: 768px) {
+    #navbar li {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #navbar{
+        height: 180px;
+        float: left;
+        text-align: right;
+        padding-top: 10px;
+        box-sizing: border-box;
+
+    }
+
+}
+
+
+#navbar a {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: #b2ba86;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    background-color: #797e5b;
+}
+  
+#navbar   ul ul {
+     position: absolute;
+     display: none; 
+}
+
+#navbar   ul ul li {
+    width: 100%;
+}
+  
+#navbar ul li:hover ul {
+     display:block;
+}
+  
+#navbar ul li:hover ul a:hover {
+    background-color:  #797e5b 
+}
+
+/*imagen logo*/
+.logo a img{
+    border-radius: 50%;
+    opacity: .7;
+}
+
+
+/* index menu servicios */
+section h2{
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+
+}
+.menuServicios {
+    font-size: 80%;
+    padding: 5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10em;
+  }
+  .menuServicios li {
+    display: block;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+
+  .menuServicios a {
+    text-decoration: none;
+    color: rgba(58, 65, 29, 0.8);
+  }
+
+  .menuServicios img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  .menuServicios h2 {
+    font-size: 1.3em;
+    margin: 0;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .menuServicios {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5em;
+      }
+    }
+
+
+
+
+
+/* ANIMACIONES Menu servicios*/
+
+.transform{
+    transition: all 1s;
+}
+
+.transform:hover{
+    transform:scale(1.1);
+}
+
+.Servicios{
+    background:#b2ba86
+}
+
+/*HTML NOSOTROS*/
+.nosotros{
+    padding: 15px;
+    text-align: justify;
+    border-style: solid;
+    border-color: black;
+    margin: 5px;
+}
+
+.nosotros h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+footer div p a{
+    text-decoration: none;
+    color: black;
+}
+
+/*HTML NOVEDADES*/
+.novedades{
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+
+}
+
+.novedades article{
+    padding: 10px;
+}
+
+.novedades a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/*HTML CONTACTO*/
+
+.htmlContacto{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas:
+    "formulario contacto"
+    "google google";
+}
+
+.contactoContacto{
+    grid-area: contacto;
+}
+
+.formularioContacto{
+    grid-area: formulario;
+    padding:20px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 30px;
+}
+
+.googlemaps{
+    grid-area: google;
+}
+
+.contactoContacto{
+    text-align: right;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 30px;
+}
+
+
+
+
+/* Imagen y texto MAIN Index */
+.imagenMainIndex {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.h1MainIndex {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-shadow: 2px 2px 5px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.h2MainIndex {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    text-shadow: 2px 2px 5px black, 0 0 1em black, 0 0 0.2em black;
+    margin-right: 5%;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .h1MainIndex {
+        display: none;
+      }
+
+    .h2MainIndex {
+        display: none;
+      }
+    
+    .h1MainIndex {
+        font-size: 60%;
+    }
+    }
+
+/* Imagen y texto resto */
+.imagenMain {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+.h1Main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.h2Main {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+@media screen and (max-width: 768px) {
+    .h2Main {
+        display: none;
+      }
+        
+    .h1Main {
+        font-size: 60%;
+    }
+}
+
+
+
+
+
+/* Sección servicios*/
+.seccionServicios a{
+    text-decoration: none;
+    color: rgb(35, 100, 0);
+}
+
+.section__div-backgroundcolor{
+    background-color: #e9ebe0;
+}
+
+.titulodeotrocolor{
+    background-color: #e9ebe0;
+}
+
+.seccionServicios{
+    padding: 20px;
+    margin: 15px;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.seccionServicios h2{
+    text-align: center;
+}
+
+.seccionServicios p{
+    text-align: justify;
+
+}
+
+.seccionServicios div{
+    padding: 5px;
+}
+
+
+
+/* Footer*/
+footer{
+    margin: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+footer h2{
+    line-height: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.footerDatos{
+    line-height: 40px;
+    width: 50%;
+    text-align:left;
+    margin: 30px;
+}
+
+.fa-instagram{
+    font-size: 50px;
+    color: brown;
+    letter-spacing: 20px;
+}
+
+.fa-facebook{
+    font-size: 50px;
+    color: darkblue;
+    letter-spacing: 20px;
+}
+
+.fa-whatsapp{
+    font-size: 50px;
+    color: darkgreen;
+    letter-spacing: 20px;
+}
+
+.fa-arrow-up-from-bracket{
+    color: white;
+    font-size: 25px;
+}
+
+
+/*Footer del footer*/
+
+.footerdelfooter{
+    background-color: rgb(74, 73, 73);
+    color: white;
+    opacity: 0.6;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.copy{
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.rde{
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom:20px;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+/* viendo para contactanos en los servicios y logo WP */
+.contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contactanos a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 2px 5px rgba(0,0,0,0.4);
+}
