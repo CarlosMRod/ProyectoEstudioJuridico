@@ -57,8 +57,7 @@ header{
     display: inline-block;
     width: 25%;
     position:relative;
-  }
-
+}
 
 #navbar a {
     font-size: 14px;
@@ -93,7 +92,6 @@ header{
 #navbar ul li:hover ul a:hover {
     background-color:  #797e5b 
 }
-
 
 @media screen and (max-width: 768px) {
     #navbar li {
@@ -136,22 +134,22 @@ section h1{
     line-height: 70px;
     text-align: center;
     font-weight: 600;
-
 }
 
 section h2{
     line-height: 50px;
     text-align: center;
     font-weight: 600;
-
 }
+
 .menuServicios {
     font-size: 80%;
     padding: 5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10em;
-  }
+}
+
   .menuServicios li {
     display: block;
     padding: 0.5em;
@@ -192,9 +190,7 @@ section h2{
 }
 
 
-
 /* ANIMACIONES Menu servicios*/
-
 .transform{
     transition: all 1s;
 }
@@ -221,11 +217,11 @@ section h2{
     text-transform: uppercase;
 }
 
-
 footer div p a{
     text-decoration: none;
     color: black;
 }
+
 
 /*HTML NOVEDADES*/
 .novedades{
@@ -233,7 +229,6 @@ footer div p a{
     border-style: solid;
     border-color: black;
     padding: 5px;
-
 }
 
 .novedades article{
@@ -248,8 +243,8 @@ footer div p a{
     font-weight: bold;
 }
 
-/*HTML CONTACTO*/
 
+/*HTML CONTACTO*/
 .htmlContacto{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -282,8 +277,6 @@ footer div p a{
     line-height: 40px;
     margin: 30px;
 }
-
-
 
 
 /* Imagen y texto MAIN Index */
@@ -321,14 +314,14 @@ footer div p a{
     .h1MainIndex {
         font-size: 60%;
     }
-    }
+}
 
 /* Imagen y texto resto */
 .imagenMain {
     position: relative;
     text-align: center;
     color: white;
-  }
+}
   
 .h1Main {
     position: absolute;
@@ -355,9 +348,6 @@ footer div p a{
         font-size: 60%;
     }
 }
-
-
-
 
 
 /* Sección servicios*/
@@ -396,6 +386,27 @@ footer div p a{
     padding: 5px;
 }
 
+
+/* Contactanos logo WP */
+.contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contactanos a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 2px 5px rgba(0,0,0,0.4);
+}
+
+.contactanos{
+    transition: all 2s;
+}
+
+.contactanos:hover{
+    transform:rotate(360deg);
+}
 
 
 /* Footer*/
@@ -471,9 +482,7 @@ footer h2{
 }
 
 
-
 /*Footer del footer*/
-
 .footerdelfooter{
     background-color: rgb(74, 73, 73);
     color: white;
@@ -495,22 +504,4 @@ footer h2{
     position:fixed;
     bottom: 0;
     right: 0;
-}
-
-
-
-
-
-
-/* viendo para contactanos en los servicios y logo WP */
-.contactanos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.contactanos a{
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 5px 2px 5px rgba(0,0,0,0.4);
 }
