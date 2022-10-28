@@ -8,7 +8,6 @@
 body{
     font-family: 'Inter', sans-serif;
     background-color: #b2ba86;
-    padding-top: 60px;
 }
 
 /*Barra de navegacion*/
@@ -66,6 +65,7 @@ header{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        box-sizing: border-box;
     }
 
     #navbar{
@@ -77,6 +77,12 @@ header{
 
     }
 
+    header{
+        position: relative;
+    }
+
+    #navbar  ul ul {
+        z-index: 2;
 }
 
 
@@ -97,7 +103,7 @@ header{
     background-color: #797e5b;
 }
   
-#navbar   ul ul {
+#navbar  ul ul {
      position: absolute;
      display: none; 
 }
