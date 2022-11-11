@@ -301,18 +301,6 @@ footer .footerdelfooter .copy {
   padding-top: 15px;
   padding-left: 10px;
 }
-footer .footerdelfooter .rde {
-  text-align: right;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-footer .footerdelfooter .rde .fa-arrow-up-from-bracket {
-  color: white;
-  font-size: 25px;
-}
 
 /*Barra de navegacion*/
 header {
