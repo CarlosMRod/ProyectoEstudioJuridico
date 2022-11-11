@@ -1,0 +1,29 @@
+.htmlContacto{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas:
+    "formulario contacto"
+    "google google";
+}
+
+.contactoContacto{
+    grid-area: contacto;
+    text-align: right;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 30px;
+}
+
+.formularioContacto{
+    grid-area: formulario;
+    padding:20px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 30px;
+}
+
+.googlemaps{
+    grid-area: google;
+}

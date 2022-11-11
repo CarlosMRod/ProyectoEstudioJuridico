@@ -1,0 +1,59 @@
+/*Imagen y texto Index*/
+.imagenMainIndex {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.h1MainIndex {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-shadow: 2px 2px 5px black, 0 0 1em black, 0 0 0.2em black;
+    @media screen and (max-width: 768px) {
+        display: none;
+        font-size:60%;
+        }
+}
+
+.h2MainIndex {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    text-shadow: 2px 2px 5px black, 0 0 1em black, 0 0 0.2em black;
+    margin-right: 5%;
+    text-align: left;
+    @media screen and (max-width: 768px) {
+        display: none;
+        }
+}
+
+
+/* Imagen y texto resto */
+.imagenMain {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  
+.h1Main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px black, 0 0 1em black, 0 0 0.2em black;
+    @media screen and (max-width: 768px) {
+        font-size: 60%;
+        }
+}
+
+.h2Main {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px black, 0 0 1em black, 0 0 0.2em black;
+    @media screen and (max-width: 768px) {
+        display: none;
+        }
+}

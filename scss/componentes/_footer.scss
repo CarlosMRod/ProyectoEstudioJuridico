@@ -1,0 +1,81 @@
+footer{
+    margin: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    h2{
+        line-height: 50px;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 600;
+        @media screen and (max-width: 768px) {
+                line-height: 30px;
+                text-align: center;
+                text-decoration: underline;
+                font-size: 70%;
+            }
+    }
+    .footerDatos{
+        line-height: 40px;
+        width: 50%;
+        text-align:left;
+        margin: 30px;
+        .fa-instagram{
+            font-size: 50px;
+            color: brown;
+            letter-spacing: 20px;
+            @media screen and (max-width: 768px) {
+                    font-size: 40px;
+                    color: brown;
+                    letter-spacing: 15px;
+                }
+        }
+        .fa-facebook{
+            font-size: 50px;
+            color: darkblue;
+            letter-spacing: 20px;
+            @media screen and (max-width: 768px) {
+                    font-size: 40px;
+                    color: darkblue;
+                    letter-spacing: 15px;
+                }
+        }
+        .fa-whatsapp{
+            font-size: 50px;
+            color: darkgreen;
+            letter-spacing: 20px;
+            @media screen and (max-width: 768px) {
+                    font-size: 40px;
+                    color: darkgreen;
+                    letter-spacing: 15px;
+                }
+        }
+    }
+
+    .footerdelfooter{
+        background-color: rgb(74, 73, 73);
+        color: white;
+        opacity: 0.6;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        .copy{
+            text-align: center;
+            padding-top: 15px;
+            padding-left: 10px;
+        }
+        
+        .rde{
+            text-align: right;
+            padding-right: 10px;
+            padding-bottom:20px;
+            position:fixed;
+            bottom: 0;
+            right: 0;
+            .fa-arrow-up-from-bracket{
+                color: white;
+                font-size: 25px;
+            }
+        }
+    }
+}
